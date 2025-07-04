@@ -11,6 +11,9 @@ class PagesController < ApplicationController
   def blog
   end
 
+  def career
+  end
+
   def contact
   end
 end
