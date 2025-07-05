@@ -1,20 +1,75 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand" href="#">GrowFund</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><%= link_to 'Home', root_path, class: "nav-link" %></li>
-          <li class="nav-item"><%= link_to 'About', '/pages/about', class: "nav-link" %></li>
-          <li class="nav-item"><%= link_to 'Services', '/pages/sevices', class: "nav-link" %></li>
-          <li class="nav-item"><%= link_to 'Blog', '/pages/blog', class: "nav-link" %></li>
-          <li class="nav-item"><%= link_to 'Career', '/pages/career', class: "nav-link" %></li>
-          <li class="nav-item"><%= link_to 'Contact', '/pages/contact', class: "nav-link" %></li>
-          <li class="nav-item"><%#= link_to 'Login', login_path, class: "nav-link" %></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary py-2 shadow">
+  <div class="container">
+    <%= link_to root_path, class: "navbar-brand d-flex align-items-center" do %>
+      <%= image_tag "image.png", alt: "GrowFund Logo", height: 40, class: "me-2" %>
+      <span class="fw-bold fs-4">GrowFund</span>
+    <% end %>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><%= link_to 'Home', root_path, class: "nav-link px-3 fw-medium" %></li>
+        <li class="nav-item"><%= link_to 'About', '/pages/about', class: "nav-link px-3 fw-medium active" %></li>
+        <li class="nav-item"><%= link_to 'Services', '/pages/services', class: "nav-link px-3 fw-medium" %></li>
+        <li class="nav-item"><%= link_to 'Blog', '/pages/blog', class: "nav-link px-3 fw-medium" %></li>
+        <li class="nav-item"><%= link_to 'Careers', '/pages/career', class: "nav-link px-3 fw-medium" %></li>
+        <li class="nav-item"><%= link_to 'Contact', '/pages/contact', class: "nav-link px-3 fw-medium" %></li>
+        <li class="nav-item ms-lg-3">
+          <%#= link_to 'Login', login_path, class: "btn btn-outline-light rounded-pill px-4 fw-medium" %>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
+<style>
+  .navbar {
+    transition: all 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    background-color: rgba(13, 110, 253, 0.95) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-link {
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 60%;
+  }
+</style>
+
+<script>
+  // Add scroll effect to navbar
+  document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.querySelector('.navbar');
+    
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  });
+</script>
