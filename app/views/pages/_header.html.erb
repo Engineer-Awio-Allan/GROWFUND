@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary py-2 shadow">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 shadow">
   <div class="container">
     <%= link_to root_path, class: "navbar-brand d-flex align-items-center" do %>
       <%= image_tag "image.png", alt: "GrowFund Logo", height: 40, class: "me-2" %>
@@ -11,12 +11,12 @@
     
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><%= link_to 'Home', root_path, class: "nav-link px-3 fw-medium" %></li>
-        <li class="nav-item"><%= link_to 'About', '/pages/about', class: "nav-link px-3 fw-medium active" %></li>
-        <li class="nav-item"><%= link_to 'Services', '/pages/sevices', class: "nav-link px-3 fw-medium" %></li>
-        <li class="nav-item"><%= link_to 'Blog', '/pages/blog', class: "nav-link px-3 fw-medium" %></li>
-        <li class="nav-item"><%= link_to 'Careers', '/pages/career', class: "nav-link px-3 fw-medium" %></li>
-        <li class="nav-item"><%= link_to 'Contact', '/pages/contact', class: "nav-link px-3 fw-medium" %></li>
+        <li class="nav-item "><%= link_to 'Home', root_path, class: "nav-link px-3 fw-medium text-white fs-5 fw-bold" %></li>
+        <li class="nav-item"><%= link_to 'About', '/pages/about', class: "nav-link px-3 fw-medium text-white fs-5 fw-bold" %></li>
+        <li class="nav-item"><%= link_to 'Services', '/pages/sevices', class: "nav-link px-3 fw-medium text-white fs-5 fw-bold" %></li>
+        <li class="nav-item"><%= link_to 'Blog', '/pages/blog', class: "nav-link px-3 fw-medium text-white fs-5 fw-bold" %></li>
+        <li class="nav-item"><%= link_to 'Careers', '/pages/career', class: "nav-link px-3 fw-medium text-white fs-5 fw-bold" %></li>
+        <li class="nav-item"><%= link_to 'Contact', '/pages/contact', class: "nav-link px-3 fw-medium text-white fs-5 fw-bold" %></li>
         <li class="nav-item ms-lg-3">
           <%#= link_to 'Login', login_path, class: "btn btn-outline-light rounded-pill px-4 fw-medium" %>
         </li>
