@@ -1,82 +1,126 @@
 <main>
-
   <!-- Hero Banner -->
-  <section class="bg-primary text-white text-center py-5">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Invest Confidently with GrowFund Microfinance</h1>
-      <p class="lead">Your trusted partner in building wealth and securing your financial future.</p>
-      <a href="<%# services_path %>" class="btn btn-success btn-lg me-2">Explore Services</a>
-      <a href="<%# about_path %>" class="btn btn-outline-light btn-lg">Learn More</a>
+  <section class="hero-banner bg-gradient-primary text-white text-center py-5">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold mb-4">Empowering Your Financial Future with GrowFund</h1>
+          <p class="lead mb-5">Trusted microfinance solutions for civil servants, pensioners, and small businesses across Uganda</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="/pages/services" class="btn btn-success btn-lg px-4">Our Services</a>
+            <a href="/pages/about" class="btn btn-outline-light btn-lg px-4">Learn About Us</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Company Overview -->
-  <section class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="mb-4">Welcome to GrowFund Investment Company</h2>
-      <p class="lead">
-        We are a forward-thinking investment company that helps individuals and organizations grow their wealth responsibly.
-        Whether you’re a first-time investor or managing a portfolio, we’re here to guide you.
-      </p>
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center">
+          <h2 class="display-5 fw-bold mb-4">Your Trusted Financial Partner</h2>
+          <div class="divider bg-primary mx-auto mb-4"></div>
+          <p class="lead text-muted mb-5">
+            GrowFund Investment Limited is a licensed microfinance institution regulated by UMRA, committed to supporting civil servants, pensioners, and small business communities build sustainable economic futures through financial education and customized microfinance solutions.
+          </p>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="feature-box p-4">
+                <div class="icon-box bg-primary bg-opacity-10 text-primary mb-3 mx-auto">
+                  <i class="bi bi-shield-check fs-3"></i>
+                </div>
+                <h5>UMRA Regulated</h5>
+                <p>Fully licensed and compliant with all financial regulations</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-box p-4">
+                <div class="icon-box bg-primary bg-opacity-10 text-primary mb-3 mx-auto">
+                  <i class="bi bi-geo-alt fs-3"></i>
+                </div>
+                <h5>Northern Uganda Focus</h5>
+                <p>Serving Lira, Gulu, and Kitgum with plans for national expansion</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature-box p-4">
+                <div class="icon-box bg-primary bg-opacity-10 text-primary mb-3 mx-auto">
+                  <i class="bi bi-people fs-3"></i>
+                </div>
+                <h5>Community Driven</h5>
+                <p>Committed to financial inclusion and social impact</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!--some scrolling images-->
-    <!-- Image Carousel -->
-  <div id="investmentCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/assets/investment1.jpg" class="d-block w-100" alt="Investment Opportunity 1">
-      </div>
-      <div class="carousel-item">
-        <img src="/assets/investment2.jpg" class="d-block w-100" alt="Investment Opportunity 2">
-      </div>
-      <div class="carousel-item">
-        <img src="/assets/investment3.jpg" class="d-block w-100" alt="Investment Opportunity 3">
+  <!-- Image Gallery -->
+  <section class="py-0">
+    <div class="container-fluid px-0">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <%= image_tag "image2.png", alt: "GrowFund Headquarters", class: "img-fluid w-100 gallery-img" %>
+        </div>
+        <div class="col-md-4">
+          <%= image_tag "image2.png", alt: "Our Advisory Team", class: "img-fluid w-100 gallery-img" %>
+        </div>
+        <div class="col-md-4">
+          <%= image_tag "image2.png", alt: "Satisfied Client", class: "img-fluid w-100 gallery-img" %>
+        </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#investmentCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#investmentCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
+  </section>
 
   <!-- Services Overview -->
-  <section class="py-5">
+  <section class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center mb-5">What We Offer</h2>
-      <div class="row text-center">
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm h-100 border-0">
-            <div class="card-body">
-              <h5 class="card-title text-primary">💼 Investment Plans</h5>
-              <p class="card-text">Custom-built plans based on your goals, timeline, and risk appetite.</p>
-              <a href="<%# services_path %>" class="btn btn-outline-primary btn-sm">Learn More</a>
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">Our Financial Solutions</h2>
+        <div class="divider bg-primary mx-auto mb-4"></div>
+        <p class="lead text-muted">Tailored services designed for your financial growth</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm hover-top">
+            <div class="card-body p-4 text-center">
+              <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
+                <i class="bi bi-cash-coin fs-3"></i>
+              </div>
+              <h5 class="card-title text-primary mb-3">Salary Loans</h5>
+              <p class="card-text">Affordable short-term loans (up to 6 months) for salaried individuals with flexible repayment terms.</p>
+              <a href="/pages/services" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
             </div>
           </div>
         </div>
-
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm h-100 border-0">
-            <div class="card-body">
-              <h5 class="card-title text-primary">📊 Portfolio Management</h5>
-              <p class="card-text">Let our experts manage and optimize your financial portfolio.</p>
-              <a href="<%# services_path %>" class="btn btn-outline-primary btn-sm">Learn More</a>
+        
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm hover-top">
+            <div class="card-body p-4 text-center">
+              <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
+                <i class="bi bi-shop fs-3"></i>
+              </div>
+              <h5 class="card-title text-primary mb-3">Business Financing</h5>
+              <p class="card-text">Customized microfinance solutions to help small business owners grow and sustain their enterprises.</p>
+              <a href="/pages/services" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
             </div>
           </div>
         </div>
-
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm h-100 border-0">
-            <div class="card-body">
-              <h5 class="card-title text-primary">🏠 Real Estate Investment</h5>
-              <p class="card-text">Access high-yield real estate opportunities backed by research and strategy.</p>
-              <a href="<%# services_path %>" class="btn btn-outline-primary btn-sm">Learn More</a>
+        
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm hover-top">
+            <div class="card-body p-4 text-center">
+              <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
+                <i class="bi bi-book fs-3"></i>
+              </div>
+              <h5 class="card-title text-primary mb-3">Financial Education</h5>
+              <p class="card-text">Comprehensive training programs to enhance financial literacy and money management skills.</p>
+              <a href="/pages/services" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
             </div>
           </div>
         </div>
@@ -85,73 +129,91 @@
   </section>
 
   <!-- Stats Section -->
-  <section class="bg-success text-white py-5">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <h3>500+</h3>
-          <p>Happy Investors</p>
+  <section class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-3 mb-4">
+          <div class="counter-box p-3">
+            <h3 class="display-4 fw-bold mb-2">7+</h3>
+            <p class="mb-0 text-uppercase small">Years of Service</p>
+          </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <h3>10+ Years</h3>
-          <p>Industry Experience</p>
+        <div class="col-md-3 mb-4">
+          <div class="counter-box p-3">
+            <h3 class="display-4 fw-bold mb-2">3</h3>
+            <p class="mb-0 text-uppercase small">Branch Locations</p>
+          </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <h3>95%</h3>
-          <p>Success Rate</p>
+        <div class="col-md-3 mb-4">
+          <div class="counter-box p-3">
+            <h3 class="display-4 fw-bold mb-2">5000+</h3>
+            <p class="mb-0 text-uppercase small">Clients Served</p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="counter-box p-3">
+            <h3 class="display-4 fw-bold mb-2">95%</h3>
+            <p class="mb-0 text-uppercase small">Satisfaction Rate</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Testimonials -->
-  <section class="py-5 bg-light">
+  <section class="py-5 bg-white">
     <div class="container">
-      <h2 class="text-center mb-5">What Our Clients Say</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-6 mb-4">
-          <div class="card shadow-sm border-0">
-            <div class="card-body">
-              <p class="card-text">“GrowFund gave me peace of mind and consistent growth on my investments. Highly recommended.”</p>
-              <!--<p class="fw-bold mb-0">— Sarah K., Kampala</p>-->
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-4">
-          <div class="card shadow-sm border-0">
-            <div class="card-body">
-              <p class="card-text">“Excellent service and trusted advisors. I’ve doubled my savings in just 2 years!”</p>
-              <!--<p class="fw-bold mb-0">— James O., Entebbe</p>-->
-            </div>
-          </div>
-        </div>
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">Client Success Stories</h2>
+        <div class="divider bg-primary mx-auto mb-4"></div>
+        <p class="lead text-muted">Hear from those who've grown with us</p>
       </div>
-    </div>
-  </section>
-
-
-  <!-- Blog Highlights -->
-  <section class="py-5">
-    <div class="container text-center">
-      <h2 class="mb-4">Latest Insights</h2>
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <div class="card shadow-sm h-100 border-0">
-            <div class="card-body">
-              <h5 class="card-title">📈 Investing for Beginners in 2025</h5>
-              <p class="card-text">A practical guide to get you started on your wealth-building journey.</p>
-              <a href="#" class="btn btn-sm btn-outline-primary">Read Article</a>
+      
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex mb-3">
+                <div class="flex-shrink-0">
+                  <%= image_tag "aw.jpg", alt: "Client", class: "rounded-circle", width: "60" %>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h5 class="mb-1">Sarah K.</h5>
+                  <p class="text-muted small mb-0">Civil Servant, Lira</p>
+                </div>
+              </div>
+              <p class="card-text">"GrowFund's salary loan helped me renovate my home without financial stress. Their repayment terms are the most flexible I've found."</p>
+              <div class="text-primary">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="col-md-6 mb-4">
-          <div class="card shadow-sm h-100 border-0">
-            <div class="card-body">
-              <h5 class="card-title">💡 5 Ways to Maximize ROI</h5>
-              <p class="card-text">Strategies our team uses to consistently outperform the market.</p>
-              <a href="#" class="btn btn-sm btn-outline-primary">Read Article</a>
+        
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex mb-3">
+                <div class="flex-shrink-0">
+                  <%= image_tag "aw.jpg", alt: "Client", class: "rounded-circle", width: "60" %>
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h5 class="mb-1">James O.</h5>
+                  <p class="text-muted small mb-0">Small Business Owner, Gulu</p>
+                </div>
+              </div>
+              <p class="card-text">"The business financing and advisory services helped me expand my retail shop. I've doubled my income in just one year!"</p>
+              <div class="text-primary">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -160,13 +222,90 @@
   </section>
 
   <!-- Call to Action -->
-  <section class="py-5 bg-primary text-white text-center">
-    <div class="container">
-      <h2>Let’s Build Your Financial Future Together</h2>
-      <p>Join thousands of smart investors who trust GrowFund.</p>
-      <a href="<%= pages_contact_path %>" class="btn btn-light btn-lg">Contact Us Today</a>
+  <section class="py-5 bg-primary text-white">
+    <div class="container text-center py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="display-5 fw-bold mb-4">Ready to Grow Your Financial Future?</h2>
+          <p class="lead mb-5">Join thousands of satisfied clients who trust GrowFund for their financial needs</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="/pages/contact" class="btn btn-light btn-lg px-4">Get Started</a>
+            <a href="tel:+256XXXXXXXXX" class="btn btn-outline-light btn-lg px-4">
+              <i class="bi bi-telephone me-2"></i> Call Us
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-    
 
+  <style>
+    .hero-banner {
+      background: linear-gradient(135deg, #0d6efd 0%, #084298 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-banner::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      
+      opacity: 0.1;
+      pointer-events: none;
+    }
+    
+    .divider {
+      width: 80px;
+      height: 3px;
+    }
+    
+    .icon-box {
+      width: 70px;
+      height: 70px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    
+    .hover-top {
+      transition: all 0.3s ease;
+    }
+    
+    .hover-top:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    }
+    
+    .hover-top:hover .icon-box {
+      background-color: var(--bs-primary) !important;
+      color: white !important;
+    }
+    
+    .gallery-img {
+      height: 300px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .gallery-img:hover {
+      transform: scale(1.03);
+    }
+    
+    .counter-box {
+      border: 2px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    
+    .counter-box:hover {
+      border-color: var(--bs-primary);
+      transform: translateY(-5px);
+    }
+  </style>
 </main>

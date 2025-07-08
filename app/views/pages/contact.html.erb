@@ -1,47 +1,271 @@
 <!-- app/views/pages/contact.html.erb -->
-
 <main>
-
   <!-- Hero Section -->
-  <section class="bg-primary text-white text-center py-5">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Contact Us</h1>
-      <p class="lead">We’re here to answer your questions and guide your investment journey.</p>
+  <section class="hero-banner bg-gradient-primary text-white text-center py-5">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold mb-4">Contact GrowFund</h1>
+          <p class="lead mb-5">We're here to help you with all your financial needs. Reach out to our team today.</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#contact-form" class="btn btn-success btn-lg px-4">Send Message</a>
+            <a href="#locations" class="btn btn-outline-light btn-lg px-4">Our Locations</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Info -->
-  <section class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="mb-4">Get in Touch</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <h5 class="text-primary">📍 Office Address</h5>
-          <p>Plot 12 Investment Avenue,<br> Lira, Uganda</p>
+  <!-- Contact Options -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">How to Reach Us</h2>
+        <div class="divider bg-primary mx-auto mb-4"></div>
+        <p class="lead text-muted">Multiple convenient ways to get in touch</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Phone -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm hover-top">
+            <div class="card-body p-4 text-center">
+              <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
+                <i class="bi bi-telephone fs-3"></i>
+              </div>
+              <h5 class="text-primary mb-3">Call Us</h5>
+              <p class="card-text mb-1">Main Office</p>
+              <h5 class="mb-3"><a href="tel:+256XXXXXXXXX" class="text-dark">+256 XXX XXX XXX</a></h5>
+              <p class="small text-muted">Monday-Friday: 8:00 AM - 5:00 PM</p>
+              <p class="small text-muted">Saturday: 9:00 AM - 1:00 PM</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <h5 class="text-primary">📍 Office Address</h5>
-          <p>Plot 12 Investment Avenue,<br> Lira, Uganda</p>
+
+        <!-- Email -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm hover-top">
+            <div class="card-body p-4 text-center">
+              <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
+                <i class="bi bi-envelope fs-3"></i>
+              </div>
+              <h5 class="text-primary mb-3">Email Us</h5>
+              <p class="card-text mb-4">Send us your inquiries and we'll respond within 24 hours</p>
+              <a href="mailto:info@growfund.co.ug" class="btn btn-outline-primary">info@growfund.co.ug</a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <h5 class="text-primary">📍 Office Address</h5>
-          <p>Plot 12 Investment Avenue,<br> Lira, Uganda</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h5 class="text-primary">📞 Call Us</h5>
-          <p>+256 XXXXXXX<br>+256 XXXXXXX</p>
-        </div>
-         <div class="col-md-4 mb-4">
-          <a href="https://wa.me/256760184318" target="_blank" class="btn btn-success">
-  <i class="bi bi-whatsapp"></i> WhatsApp Us
-</a>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h5 class="text-primary">✉️ Email</h5>
-          <p>support@growfundinvest.com</p>
+
+        <!-- Visit -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm hover-top">
+            <div class="card-body p-4 text-center">
+              <div class="icon-box bg-primary bg-opacity-10 text-primary mb-4 mx-auto">
+                <i class="bi bi-geo-alt fs-3"></i>
+              </div>
+              <h5 class="text-primary mb-3">Visit Us</h5>
+              <p class="card-text mb-4">Come to any of our branches during working hours</p>
+              <a href="#locations" class="btn btn-outline-primary">View Locations</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
  
+
+  <!-- Locations -->
+  <section id="locations" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">Our Branch Locations</h2>
+        <div class="divider bg-primary mx-auto mb-4"></div>
+        <p class="lead text-muted">Visit us at any of our conveniently located branches</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Head Office -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-start mb-3">
+                <div class="icon-box-sm bg-primary bg-opacity-10 text-primary me-3">
+                  <i class="bi bi-building"></i>
+                </div>
+                <div>
+                  <h5 class="text-primary mb-1">Head Office</h5>
+                  <p class="small text-muted">Lira City</p>
+                </div>
+              </div>
+              <address class="mb-4">
+                Muntu Investment Building<br>
+                Te-atat, Bar Ogole<br>
+                Lira City West Division<br>
+                Lira City, Uganda
+              </address>
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-telephone text-primary me-2"></i>
+                <a href="tel:+256XXXXXXXXX">+256 XXX XXX XXX</a>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-envelope text-primary me-2"></i>
+                <a href="mailto:lira@growfund.co.ug">lira@growfund.co.ug</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gulu Branch -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-start mb-3">
+                <div class="icon-box-sm bg-primary bg-opacity-10 text-primary me-3">
+                  <i class="bi bi-shop"></i>
+                </div>
+                <div>
+                  <h5 class="text-primary mb-1">Gulu Branch</h5>
+                  <p class="small text-muted">Gulu City</p>
+                </div>
+              </div>
+              <address class="mb-4">
+                Prime Business Plaza<br>
+                Plot 25, Okidi Road<br>
+                Gulu City, Uganda
+              </address>
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-telephone text-primary me-2"></i>
+                <a href="tel:+256XXXXXXXXX">+256 XXX XXX XXX</a>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-envelope text-primary me-2"></i>
+                <a href="mailto:gulu@growfund.co.ug">gulu@growfund.co.ug</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kitgum Branch -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-start mb-3">
+                <div class="icon-box-sm bg-primary bg-opacity-10 text-primary me-3">
+                  <i class="bi bi-shop"></i>
+                </div>
+                <div>
+                  <h5 class="text-primary mb-1">Kitgum Branch</h5>
+                  <p class="small text-muted">Kitgum Municipality</p>
+                </div>
+              </div>
+              <address class="mb-4">
+                Central Business Plaza<br>
+                Omiya Anyima Road<br>
+                Kitgum Municipality, Uganda
+              </address>
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-telephone text-primary me-2"></i>
+                <a href="tel:+256XXXXXXXXX">+256 XXX XXX XXX</a>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-envelope text-primary me-2"></i>
+                <a href="mailto:kitgum@growfund.co.ug">kitgum@growfund.co.ug</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="py-0 bg-light">
+    <div class="container-fluid px-0">
+      <div class="ratio ratio-21x9">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.647242630084!2d32.89989431475398!3d2.247798998418577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMTQnNTIuMCJOIDMywrA1NCczMS4xIkU!5e0!3m2!1sen!2sug!4v1620000000000!5m2!1sen!2sug" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 bg-primary text-white text-center">
+    <div class="container">
+      <h2 class="mb-3">Need Immediate Assistance?</h2>
+      <p class="lead mb-4">Our customer service team is ready to help you</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="tel:+256XXXXXXXXX" class="btn btn-light btn-lg px-4">
+          <i class="bi bi-telephone me-2"></i> Call Now
+        </a>
+        <a href="mailto:info@growfund.co.ug" class="btn btn-outline-light btn-lg px-4">
+          <i class="bi bi-envelope me-2"></i> Email Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .hero-banner {
+      background: linear-gradient(135deg, #0d6efd 0%, #084298 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .divider {
+      width: 80px;
+      height: 3px;
+    }
+    
+    .icon-box {
+      width: 70px;
+      height: 70px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    
+    .icon-box-sm {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .hover-top {
+      transition: all 0.3s ease;
+    }
+    
+    .hover-top:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+    
+    .form-control, .form-select, .form-check-input {
+      border-color: #dee2e6;
+    }
+    
+    .form-control:focus, .form-select:focus {
+      border-color: #0d6efd;
+      box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+    
+    .form-floating label {
+      color: #6c757d;
+    }
+    
+    .form-floating>.form-control:focus~label, 
+    .form-floating>.form-control:not(:placeholder-shown)~label, 
+    .form-floating>.form-select~label {
+      color: #0d6efd;
+    }
+    
+    .ratio-21x9 {
+      --bs-aspect-ratio: 42.8571428571%;
+    }
+  </style>
+</main>
